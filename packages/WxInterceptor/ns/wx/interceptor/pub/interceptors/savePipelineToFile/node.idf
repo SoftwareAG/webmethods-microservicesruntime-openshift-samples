@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="node_type">interface</value>
+  <value name="node_nsName">wx.interceptor.pub.interceptors.savePipelineToFile</value>
+  <value name="is_public">false</value>
+  <value name="shared">cHJpdmF0ZSBzdGF0aWMgb3JnLmFwYWNoZS5jb21tb25zLmxhbmcudGltZS5GYXN0RGF0ZUZvcm1h
+dCBmZGYgPSBvcmcuYXBhY2hlLmNvbW1vbnMubGFuZy50aW1lLkZhc3REYXRlRm9ybWF0LmdldElu
+c3RhbmNlKCJ5eXl5TU1kZF9ISG1tc3NzIik7CnByaXZhdGUgc3RhdGljIGphdmEudXRpbC5SYW5k
+b20gcmFuZG9tID0gbmV3IGphdmEudXRpbC5SYW5kb20obmV3IGphdmEudXRpbC5EYXRlKCkuZ2V0
+VGltZSgpKTsKCnB1YmxpYyBzdGF0aWMgZmluYWwgdm9pZCBzYXZlUGlwZWxpbmVUb0ZpbGUoU3Ry
+aW5nIG5hbWUsIElEYXRhIHBpcGVsaW5lKSB0aHJvd3MgU2VydmljZUV4Y2VwdGlvbiB7CiAgICBp
+ZihuYW1lID09IG51bGwpIHsKICAgICAgICB0aHJvdyBuZXcgU2VydmljZUV4Y2VwdGlvbigiUHJv
+dmlkZSB0aGUgZmlsZW5hbWUgdG8gd2hlcmUgdG8gc3RvcmUgdGhlIHBpcGVsaW5lIik7CiAgICB9
+CiAgICB0cnkgewogICAgICAgIEZpbGUgZlBpcGVsaW5lID0gU2VydmVyLmdldFBpcGVsaW5lRGly
+KCk7CiAgICAgICAgaWYoIWZQaXBlbGluZS5pc0RpcmVjdG9yeSgpKSB7CiAgICAgICAgICAgIGZQ
+aXBlbGluZS5ta2RpcigpOwogICAgICAgIH0KICAgICAgICBGaWxlIGYgPSBuZXcgRmlsZShmUGlw
+ZWxpbmUsIG5hbWUpOwogICAgICAgIElEYXRhWE1MQ29kZXIgeGMgPSBuZXcgSURhdGFYTUxDb2Rl
+cigpOwogICAgICAgIHhjLndyaXRlVG9GaWxlKGYsIHBpcGVsaW5lKTsKICAgIH0gY2F0Y2goRmls
+ZU5vdEZvdW5kRXhjZXB0aW9uIGZuZmUpIHsKICAgICAgICB0aHJvdyBuZXcgU2VydmljZUV4Y2Vw
+dGlvbigiRXJyb3Igd2hlbiBzYXZpbmcgcGlwZWxpbmUgd2l0aCBuYW1lICIgKyBuYW1lICsgIjoi
+ICsgZm5mZSk7CiAgICB9IGNhdGNoKEV4Y2VwdGlvbiBlKSB7CiAgICAgICAgdGhyb3cgbmV3IFNl
+cnZpY2VFeGNlcHRpb24oIkVycm9yIHdoZW4gc2F2aW5nIHBpcGVsaW5lIHdpdGggbmFtZSAiICsg
+bmFtZSArICI6IiArIGUpOwogICAgfQp9</value>
+  <value name="encodeutf8">true</value>
+  <value name="extends"></value>
+  <array name="implements" type="value" depth="1">
+  </array>
+  <array name="imports" type="value" depth="1">
+    <value>java.io.File</value>
+    <value>java.io.FileNotFoundException</value>
+    <value>com.wm.app.b2b.server.Server</value>
+    <value>com.wm.data.IData</value>
+    <value>com.wm.data.IDataCursor</value>
+    <value>com.wm.data.IDataFactory</value>
+    <value>com.wm.data.IDataUtil</value>
+    <value>com.wm.util.JournalLogger</value>
+    <value>com.wm.util.coder.IDataXMLCoder</value>
+  </array>
+</Values>

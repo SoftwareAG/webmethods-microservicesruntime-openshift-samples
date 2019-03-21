@@ -1,0 +1,219 @@
+.graphStats {
+	display: inline-block;
+	float: right;
+	color: #555;
+	width: 75px;
+}
+
+div.graphStatsHeader {
+	float: right;
+	color: #555;
+	font-weight:bold;
+	width:75px;
+}
+
+.graphServiceName {
+	display: inline-block;
+	margin-right: 100px;
+}
+
+.graphStatsBox {
+	width: 450px;
+	float: right;	
+}
+
+.graphServiceNameHeader {
+	display: inline-block;
+	margin-right: 100px;
+	font-weight: bold;
+	color: #555;
+}
+
+.c-iLeaf {
+	background: rgba(0, 0, 0, 0) url("images/node-leaf-light.png") no-repeat scroll 0 0 !important;
+}
+
+.c-iexpanded {
+	background: rgba(0, 0, 0, 0) url("images/node-expanded-light.png") no-repeat scroll 0 0 !important;
+}
+
+.c-icollapsed {
+	background: rgba(0, 0, 0, 0) url("images/node-collapsed-light.png") no-repeat scroll 0 0 !important;
+}
+
+.content {
+	padding: 0px 5px;
+}
+
+h2 {
+	font-size: 1.5em;
+	color: #357ebd;
+	padding-bottom: 10px;
+}
+
+.commandBox {
+	border: 1px solid #e7e7e7;
+	padding: 5px;
+	background: #f8f8f8;
+	margin: 0px 0px 20px;
+}
+
+.commandBox_top {
+	
+}
+
+.commandBox_bottom {
+	margin-top: 40px !important;
+}
+
+.smallFont {
+	font-size: 0.9em;
+}
+
+.st-sort-ascent:after {
+	content: '\25B2';
+}
+
+.st-sort-descent:after {
+	content: '\25BC';
+}
+
+.interceptorlist {
+	width: 1000px;
+	padding: 5px;
+}
+
+.interceptorlist_header {
+	font-weight: normal;
+	font-size: 1.4em;
+	width: 1000px;
+	border-top: 1px solid #ddd;
+	margin: 5px;
+}
+
+.interceptorlist_body {
+	width: 950px;
+}
+
+.interceptorlist_header_controls {
+	font-weight: bold;
+	border-left: 1px solid #ddd;
+	float: right;
+	position: relative;
+	text-align: center;
+	width: 150px;
+}
+
+.interceptorlist_header_interceptor {
+	position: relative;
+	margin-right: 150px;
+}
+
+.interceptorlist_header_interceptor_fqn {
+	position: relative;
+	margin-left: 100px;
+	text-align: left;
+}
+
+.interceptorlist_header_interceptor_id {
+	float: left;
+	position: relative;
+	width: 100px;
+}
+
+.interceptorlist_body_list {
+	width: auto;
+	width: 100%;
+	margin-left: 0px;
+}
+
+.pointerHeader {
+	cursor: pointer;
+	font-weight: bold;
+	margin: 15px 10px 15px 15px;
+}
+
+.commandButton {
+	color: #444444;
+	background: white;
+	font-size: 0.9em;
+	border-radius: 0;
+}
+
+.commandButtonIcon {
+	color: #357ebd;
+}
+
+.colorBlue {
+	color: #357ebd;
+}
+
+.colorGrey {
+	color: grey;
+}
+
+.colorRed {
+	color: red;
+}
+
+a.tooltip {
+	position: relative;
+	text-decoration: none;
+}
+
+a.tooltip:after {
+	content: attr(data-tooltip);
+	position: absolute;
+	bottom: 130%;
+	left: 20%;
+	background: #ffcb66;
+	padding: 5px 15px;
+	color: black;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	white-space: nowrap;
+	opacity: 0;
+	/* At time of this creation, only Fx4 doing pseduo transitions */
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+}
+
+a.tooltip:before {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-top: 20px solid #ffcb66;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	/* At time of this creation, only Fx4 doing pseduo transitions */
+	-webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	opacity: 0;
+	left: 30%;
+	bottom: 90%;
+}
+
+a.tooltip:hover:after {
+	bottom: 100%;
+}
+
+a.tooltip:hover:before {
+	bottom: 70%;
+}
+
+a.tooltip:hover:after,a:hover:before {
+	opacity: 1;
+}
+
+.toast-top-right_custom {
+	top: 60px;
+	right: 12px;
+}
+
+.toast-top-center_custom {
+	top: 10px;
+	left: 50%;
+	margin-left: -150px;
+}

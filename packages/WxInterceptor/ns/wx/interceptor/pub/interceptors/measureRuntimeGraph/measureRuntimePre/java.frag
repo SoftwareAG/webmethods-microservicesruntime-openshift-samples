@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="name">measureRuntimePre</value>
+  <value name="encodeutf8">true</value>
+  <value name="body">CQ0KSURhdGFDdXJzb3IgcGlwZWxpbmVDdXJzb3IgPSBwaXBlbGluZS5nZXRDdXJzb3IoKTsNCg0K
+U3RyaW5nCV9faW50ZXJjZXB0ZWRTZXJ2aWNlTmFtZSA9IElEYXRhVXRpbC5nZXRTdHJpbmcoIHBp
+cGVsaW5lQ3Vyc29yLCAiX19pbnRlcmNlcHRlZFNlcnZpY2VOYW1lIiApOw0KDQpsb25nIHN0YXJ0
+VGltZU5hbm8gPSBTeXN0ZW0ubmFub1RpbWUoKTsNCklEYXRhCV9faW50ZXJjZXB0b3JTdG9yYWdl
+ID0gSURhdGFGYWN0b3J5LmNyZWF0ZSgpOw0KSURhdGFVdGlsLnB1dChfX2ludGVyY2VwdG9yU3Rv
+cmFnZS5nZXRDdXJzb3IoKSwgInN0YXJ0VGltZU5hbm8iLCBzdGFydFRpbWVOYW5vKTsNCg0KLy8g
+cGlwZWxpbmUNCklEYXRhVXRpbC5wdXQoIHBpcGVsaW5lQ3Vyc29yLCAiX19jYW5jZWxTZXJ2aWNl
+SW52b2NhdGlvbiIsICJmYWxzZSIgKTsJCQ0KLy8gX19pbnRlcmNlcHRvclN0b3JhZ2UNCklEYXRh
+VXRpbC5wdXQoIHBpcGVsaW5lQ3Vyc29yLCAiX19pbnRlcmNlcHRvclN0b3JhZ2UiLCBfX2ludGVy
+Y2VwdG9yU3RvcmFnZSApOw0KcGlwZWxpbmVDdXJzb3IuZGVzdHJveSgpOw0KCQ==</value>
+</Values>

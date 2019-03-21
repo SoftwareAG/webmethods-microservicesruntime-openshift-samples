@@ -1,0 +1,244 @@
+[
+            "wx.interceptor.test.pub.measureRuntimeGraph:tester": {
+                        "serviceNameToServiceMap": {
+                                   "wx.interceptor.test.pub.measureRuntimeGraph:testee": {
+                                               "serviceNameToServiceMap": {
+                                                           "wx.interceptor.test.impl:whoAmI": {
+                                                                       "serviceNameToServiceMap": {
+                                                                                  "pub.flow:getCallingService": {
+                                                                                              "serviceNameToServiceMap": {
+                                                                                                          
+                                                                                              },
+                                                                                              "stats": {
+                                                                                                          "avgRuntimeNano": "66565.76",
+                                                                                                          "standardDeviationNano": "100873.224",
+                                                                                                          "minNano": "0",
+                                                                                                          "maxNano": "1671163",
+                                                                                                          "varianceNano": "10175407391.887",
+                                                                                                          "sumNano": "73488599",
+                                                                                                          "invocations": "1104"
+                                                                                              }
+                                                                                  }
+                                                                       },
+                                                                       "stats": {
+                                                                                  "avgRuntimeNano": "2271551.229",
+                                                                                  "standardDeviationNano": "5151763.681",
+                                                                                  "minNano": "0",
+                                                                                  "maxNano": "49558603",
+                                                                                  "varianceNano": "26540669026723.758",
+                                                                                  "sumNano": "5015585113",
+                                                                                  "invocations": "2208"
+                                                                       }
+                                                           },
+                                                           "wx.interceptor.test.pub.measureRuntimeGraph:testee_1": {
+                                                                       "serviceNameToServiceMap": {
+                                                                                  "wx.interceptor.test.impl:whoAmI": {
+                                                                                              "serviceNameToServiceMap": {
+                                                                                                          "pub.flow:getCallingService": {
+                                                                                                                      "serviceNameToServiceMap": {
+                                                                                                                                 
+                                                                                                                      },
+                                                                                                                      "stats": {
+                                                                                                                                 "avgRuntimeNano": "74054.905",
+                                                                                                                                 "standardDeviationNano": "240997.779",
+                                                                                                                                 "minNano": "0",
+                                                                                                                                 "maxNano": "7069264",
+                                                                                                                                 "varianceNano": "58079929306.837",
+                                                                                                                                 "sumNano": "81756615",
+                                                                                                                                 "invocations": "1104"
+                                                                                                                      }
+                                                                                                          }
+                                                                                              },
+                                                                                              "stats": {
+                                                                                                          "avgRuntimeNano": "2548327.256",
+                                                                                                          "standardDeviationNano": "6333238.187",
+                                                                                                          "minNano": "0",
+                                                                                                          "maxNano": "70485704",
+                                                                                                          "varianceNano": "40109905935887.1",
+                                                                                                          "sumNano": "5626706582",
+                                                                                                          "invocations": "2208"
+                                                                                              }
+                                                                                  },
+                                                                                  "pub.flow:debugLog": {
+                                                                                              "serviceNameToServiceMap": {
+                                                                                                          "wx.interceptor.pub.interceptors.measureRuntimeInMemory:measureRuntimePost": {
+                                                                                                                      "serviceNameToServiceMap": {
+                                                                                                                                 
+                                                                                                                      },
+                                                                                                                      "stats": {
+                                                                                                                                 "avgRuntimeNano": "136251.992",
+                                                                                                                                 "standardDeviationNano": "1903825.93",
+                                                                                                                                 "minNano": "0",
+                                                                                                                                 "maxNano": "63262300",
+                                                                                                                                 "varianceNano": "3624553172457.324",
+                                                                                                                                 "sumNano": "150422199",
+                                                                                                                                 "invocations": "1104"
+                                                                                                                      }
+                                                                                                          },
+                                                                                                          "wx.interceptor.pub.interceptors.measureRuntimeInMemory:measureRuntimePre": {
+                                                                                                                      "serviceNameToServiceMap": {
+                                                                                                                                 
+                                                                                                                      },
+                                                                                                                      "stats": {
+                                                                                                                                 "avgRuntimeNano": "66000.147",
+                                                                                                                                 "standardDeviationNano": "103791.562",
+                                                                                                                                 "minNano": "0",
+                                                                                                                                 "maxNano": "1498445",
+                                                                                                                                 "varianceNano": "10772688414.122",
+                                                                                                                                  "sumNano": "72864162",
+                                                                                                                                 "invocations": "1104"
+                                                                                                                      }
+                                                                                                          }
+                                                                                              },
+                                                                                              "stats": {
+                                                                                                          "avgRuntimeNano": "803085.259",
+                                                                                                          "standardDeviationNano": "2614762.389",
+                                                                                                          "minNano": "0",
+                                                                                                          "maxNano": "74018556",
+                                                                                                          "varianceNano": "6836982350736.684",
+                                                                                                          "sumNano": "886606126",
+                                                                                                          "invocations": "1104"
+                                                                                              }
+                                                                                  }
+                                                                       },
+                                                                       "stats": {
+                                                                                  "avgRuntimeNano": "6252534.48",
+                                                                                  "standardDeviationNano": "8637198.793",
+                                                                                  "minNano": "0",
+                                                                                  "maxNano": "91005211",
+                                                                                  "varianceNano": "74601202994187.48",
+                                                                                  "sumNano": "6902798066",
+                                                                                  "invocations": "1104"
+                                                                       }
+                                                           },
+                                                           "wx.interceptor.test.pub.measureRuntimeGraph:testee_2": {
+                                                                       "serviceNameToServiceMap": {
+                                                                                  "wx.interceptor.test.impl:whoAmI": {
+                                                                                              "serviceNameToServiceMap": {
+                                                                                                          "pub.flow:getCallingService": {
+                                                                                                                      "serviceNameToServiceMap": {
+                                                                                                                                 
+                                                                                                                      },
+                                                                                                                      "stats": {
+                                                                                                                                 "avgRuntimeNano": "69770.238",
+                                                                                                                                 "standardDeviationNano": "145852.598",
+                                                                                                                                 "minNano": "0",
+                                                                                                                                 "maxNano": "3091175",
+                                                                                                                                 "varianceNano": "21272980229.93",
+                                                                                                                                 "sumNano": "77026343",
+                                                                                                                                 "invocations": "1104"
+                                                                                                                      }
+                                                                                                          }
+                                                                                              },
+                                                                                              "stats": {
+                                                                                                          "avgRuntimeNano": "2350272.258",
+                                                                                                          "standardDeviationNano": "5144045.597",
+                                                                                                          "minNano": "0",
+                                                                                                          "maxNano": "49288178",
+                                                                                                          "varianceNano": "26461205104616.496",
+                                                                                                          "sumNano": "5189401146",
+                                                                                                          "invocations": "2208"
+                                                                                              }
+                                                                                  }
+                                                                       },
+                                                                       "stats": {
+                                                                                  "avgRuntimeNano": "4012304.538",
+                                                                                  "standardDeviationNano": "6306377.383",
+                                                                                  "minNano": "0",
+                                                                                  "maxNano": "73004181",
+                                                                                  "varianceNano": "39770395697907.625",
+                                                                                  "sumNano": "4429584210",
+                                                                                  "invocations": "1104"
+                                                                       }
+                                                           }
+                                               },
+                                               "stats": {
+                                                           "avgRuntimeNano": "15745308.937",
+                                                           "standardDeviationNano": "17350484.444",
+                                                           "minNano": "0",
+                                                           "maxNano": "151189117",
+                                                           "varianceNano": "301039310445400.8",
+                                                           "sumNano": "34765642132",
+                                                           "invocations": "2208"
+                                               }
+                                   },
+                                   "wx.interceptor.test.impl:whoAmI": {
+                                               "serviceNameToServiceMap": {
+                                                           "pub.flow:getCallingService": {
+                                                                       "serviceNameToServiceMap": {
+                                                                                  
+                                                                       },
+                                                                       "stats": {
+                                                                                  "avgRuntimeNano": "87550.166",
+                                                                                  "standardDeviationNano": "452545.902",
+                                                                                  "minNano": "0",
+                                                                                  "maxNano": "12600344",
+                                                                                  "varianceNano": "204797793516.843",
+                                                                                  "sumNano": "193310767",
+                                                                                  "invocations": "2208"
+                                                                       }
+                                                           }
+                                               },
+                                               "stats": {
+                                                           "avgRuntimeNano": "2318770.551",
+                                                           "standardDeviationNano": "5296673.425",
+                                                           "minNano": "0",
+                                                           "maxNano": "65003722",
+                                                           "varianceNano": "28054749367822.04",
+                                                           "sumNano": "10239690754",
+                                                           "invocations": "4416"
+                                               }
+                                   },
+                                   "pub.flow:debugLog": {
+                                               "serviceNameToServiceMap": {
+                                                           "wx.interceptor.pub.interceptors.measureRuntimeInMemory:measureRuntimePost": {
+                                                                       "serviceNameToServiceMap": {
+                                                                                  
+                                                                       },
+                                                                       "stats": {
+                                                                                  "avgRuntimeNano": "97621.458",
+                                                                                  "standardDeviationNano": "494518.487",
+                                                                                  "minNano": "0",
+                                                                                  "maxNano": "15908935",
+                                                                                  "varianceNano": "244548534015.69",
+                                                                                  "sumNano": "107774090",
+                                                                                  "invocations": "1104"
+                                                                       }
+                                                           },
+                                                           "wx.interceptor.pub.interceptors.measureRuntimeInMemory:measureRuntimePre": {
+                                                                       "serviceNameToServiceMap": {
+                                                                                  
+                                                                       },
+                                                                       "stats": {
+                                                                                  "avgRuntimeNano": "76667.518",
+                                                                                  "standardDeviationNano": "263397.522",
+                                                                                  "minNano": "0",
+                                                                                  "maxNano": "7747004",
+                                                                                  "varianceNano": "69378254439.137",
+                                                                                  "sumNano": "84640940",
+                                                                                  "invocations": "1104"
+                                                                       }
+                                                           }
+                                               },
+                                               "stats": {
+                                                           "avgRuntimeNano": "734181.272",
+                                                           "standardDeviationNano": "1301350.238",
+                                                           "minNano": "0",
+                                                           "maxNano": "19001088",
+                                                           "varianceNano": "1693512442007.941",
+                                                           "sumNano": "810536124",
+                                                           "invocations": "1104"
+                                               }
+                                   }
+                        },
+                        "stats": {
+                                   "avgRuntimeNano": "28671002.468",
+                                   "standardDeviationNano": "27517794.401",
+                                   "minNano": "6615785",
+                                   "maxNano": "240839967",
+                                   "varianceNano": "757229008672840.5",
+                                   "sumNano": "31652786725",
+                                   "invocations": "1104"
+                        }
+            }
+]

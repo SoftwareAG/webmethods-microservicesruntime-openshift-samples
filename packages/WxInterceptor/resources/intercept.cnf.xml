@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+
+<interceptor-config>
+
+
+	<intercept service="wx.interceptor.test.*" active="true" id="8">
+		<pre>
+			<invoke active="true">wx.interceptor.pub.interceptors.measureRuntimeInMemory:measureRuntimePre</invoke>
+		</pre>
+		<post>
+			<invoke active="true">wx.interceptor.pub.interceptors.measureRuntimeInMemory:measureRuntimePost</invoke>
+		</post>
+	</intercept>
+	
+
+	<intercept service="wx.interceptor.test.impl:whoAmI" active="true" id="7">
+		<pre>
+			<invoke active="true">wx.interceptor.pub.interceptors.measureRuntimeGraph:startMeasureRuntimePre</invoke>
+		</pre>
+		<post>
+			<invoke active="true">wx.interceptor.pub.interceptors.measureRuntimeGraph:measureRuntimePost</invoke>
+		</post>
+	</intercept>
+	<intercept service="wx.interceptor.test.pub.measureRuntimeGraph:testee" active="true" id="6">
+		<pre>
+			<invoke active="true">wx.interceptor.pub.interceptors.measureRuntimeGraph:startMeasureRuntimePre</invoke>
+		</pre>
+		<post>
+			<invoke active="true">wx.interceptor.pub.interceptors.measureRuntimeGraph:measureRuntimePost</invoke>
+		</post>
+	</intercept>
+	
+	<intercept service="wx.interceptor.test.pub.measureRuntimeGraph:tester" active="true" id="5">
+		<pre>
+			<invoke active="true">wx.interceptor.pub.interceptors.measureRuntimeGraph:startMeasureRuntimePre</invoke>
+		</pre>
+		<post>
+			<invoke active="true">wx.interceptor.pub.interceptors.measureRuntimeGraph:measureRuntimePost</invoke>
+		</post>
+	</intercept>
+
+	<intercept service="wx.interceptor.impl.example.complex:multiplyList" active="true" id="1">
+		<pre>
+			<invoke active="true">wx.interceptor.impl.example.complex:multiplyList_InterceptorPre</invoke>
+		</pre>
+		<post>
+			<invoke active="true">wx.interceptor.impl.example.complex:multiplyList_InterceptorPost</invoke>
+		</post>
+	</intercept>
+
+	<intercept service="wx.interceptor.impl.example:dummyService.*" active="true" id="2">
+		<pre>
+			<invoke active="false">wx.interceptor.pub.interceptors.tracePipeline:tracePipelinePre</invoke>
+			<invoke active="true">wx.interceptor.pub.interceptors.measureRuntime:measureRuntimePre</invoke>
+		</pre>
+		<post>
+			<invoke active="true">wx.interceptor.pub.interceptors.measureRuntime:measureRuntimePost</invoke>
+			<invoke active="false">wx.interceptor.pub.interceptors.tracePipeline:tracePipelinePost</invoke>
+		</post>
+	</intercept>
+
+	<intercept service="pub.flow:debugLog" active="true" id="3">
+		<pre>
+			<invoke active="true">wx.interceptor.pub.interceptors.measureRuntimeInMemory:measureRuntimePre</invoke>
+		</pre>
+		<post>
+			<invoke active="true">wx.interceptor.pub.interceptors.measureRuntimeInMemory:measureRuntimePost</invoke>
+		</post>
+	</intercept>
+
+	<intercept service="wx.interceptor.pub.ui.*_.*" active="true" id="4">
+		<pre>
+			<invoke active="true">wx.interceptor.pub.ui.common:logRequest</invoke>
+		</pre>
+		<post>
+			<invoke active="true">wx.interceptor.pub.ui.common:logResponse</invoke>
+		</post>
+	</intercept>
+	
+</interceptor-config>

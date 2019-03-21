@@ -1,0 +1,19 @@
+<form name="addMrtInterceptorForm" ng-submit="submitForm(userForm.$valid)" novalidate>
+	<div class="modal-header">
+		<h3 class="modal-title">Measure runtime for service</h3>
+	</div>
+	<div class="modal-body">
+
+		Service Name: 
+		<input size="80" required type="text" name="serviceFqn" ng-model="mrtInterceptor.serviceFqn">
+		<p ng-show="addMrtInterceptorForm.serviceFqn.$invalid" class="help-block">
+		Provide either the fully qualified name of the service to measure the runtime for (e.g.: "<i>pub.flow:debugLog</i>"), or use a regex expression (e.g. measure all WmPublic flow servicves with "<i>pub.flow.*</i>")</p>
+
+	</div>
+					
+	<div class="modal-footer">
+		<button class="btn btn-primary" ng-click="ok(true)" ng-disabled="addInterceptorForm.$invalid">Add and close</button>
+		<button class="btn btn-primary" ng-click="ok(false)" ng-disabled="addInterceptorForm.$invalid">Add and add another</button>
+		<button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+	</div>
+</form>

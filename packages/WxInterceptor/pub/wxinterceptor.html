@@ -1,0 +1,65 @@
+<div class="content">
+
+	<h2>WxInterceptor - Home</h2>
+	
+    <div ng-include="'cmdTmpl/mainPage.html'" class="commandBox_top"></div>
+	
+	<div ng-controller="InterceptorsCtrl">
+		<table st-table="InterceptorModel.data" class="table table-striped smallFont">
+			<thead>
+				<tr>
+					<th style="width:175px;">Actions</th>
+					<th style="width:75px;">Id</th>
+					<th>Service Name</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="interceptor in InterceptorModel.data">
+					<td>
+						<span style="width:55px; font-weight:normal;" ng-click="showDetails = !showDetails" ng-class="{'ti-angle-double-down': !showDetails, 'ti-angle-double-up': showDetails}" class="pointerHeader"> </span>
+						<span style="color: #FF2D11; width:55px;" ng-click="remove(interceptor.id);" class="ti-close pointerHeader" class="tooltip" data-tooltip="Delete this interceptor."> </span>
+						<span style="width:55px;" ng-click="toggleInterceptorState(interceptor.id);" ng-class="{'colorBlue':interceptor.active=='true', 'colorGrey':interceptor.active!='true'}" class="ti-power-off pointerHeader" class="tooltip" data-tooltip="Disable/enable this interceptor."> </span>
+					</td>
+					<td>
+						<div style="width:100%; cursor:pointer;" ng-click="showDetails = !showDetails">
+							{{interceptor.id}}
+						</div>
+					</td>
+					<td>
+						<div style="width:100%; cursor:pointer;" ng-click="showDetails = !showDetails">
+							{{interceptor.serviceFqn}}
+						</div>
+						<div class=""  ng-show="showDetails" style="padding-top:10px;">
+							<table class="table interceptorlist_body_list" >
+								<tr>
+									<th style="width: 50%; ">Pre-List</th>
+									<th style="width: 50%; ">Post-List</th>
+								</tr>
+								<tr>
+									<td>
+										<ul>
+											<li ng-repeat="preService in interceptor.preList">
+												{{preService.fqn}}
+											</li>
+										</ul>
+									</td>
+									<td>
+										<ul>
+											<li ng-repeat="postService in interceptor.postList">
+												{{postService.fqn}}
+											</li>									
+										</ul>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+			
+			
+    	<div ng-include="'cmdTmpl/mainPage.html'" class="commandBox_bottom"></div>
+	
+	</div>
+</div>

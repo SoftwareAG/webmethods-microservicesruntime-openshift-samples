@@ -1,0 +1,55 @@
+		<form name="addInterceptorForm" ng-submit="submitForm(userForm.$valid)" novalidate>
+			<div class="modal-header">
+				<h3 class="modal-title">Add an Interceptor</h3>
+			</div>
+			<div class="modal-body">
+
+			Service FQN: 
+			<input required type="text" name="serviceFqn" ng-model="addInterceptor.interceptor.serviceFqn">
+			<p ng-show="addInterceptorForm.serviceFqn.$invalid" class="help-block">Provide the fully qualified name of the service to intercept. E.g.: "pub.flow:debugLog"</p>
+			<div>
+				Pre Services:			
+				<table class="table" >
+					<tr ng-repeat="preService in addInterceptor.interceptor.preList track by $index">
+						<td>
+							<input ng-model="addInterceptor.interceptor.preList[$index].fqn" />
+						</td>
+						<td>
+							<a ng-click="addPreService()" ng-show="$last">
+								<span class="ti-plus" style="cursor:pointer;" class="tooltip" data-tooltip="Add another interceptor serivce.">
+							</a>
+						</td>
+						<td>
+							<a ng-click="removePreService($index)"  >
+								<span class="ti-minus" style="cursor:pointer;" class="tooltip" data-tooltip="Remove this interceptor service.">
+							</a>
+						</td>
+					</tr>
+				</table>
+			</div>
+			<div>
+				Post Services:
+				<table class="table" >
+					<tr ng-repeat="postService in addInterceptor.interceptor.postList track by $index">
+						<td><input type="text" ng-model="addInterceptor.interceptor.postList[$index].fqn" /></td>
+						<td>
+							<a ng-click="addPostService()" ng-show="$last" >
+								<span class="ti-plus" style="cursor:pointer;">
+							</a>
+						</td>
+						<td>
+							<a ng-click="removePostService($index)">
+								<span class="ti-minus" style="cursor:pointer;">
+							</a>
+						</td>
+					</tr>
+				</table>
+			</div>
+				
+			</div>
+			<div class="modal-footer">
+				<button class="btn btn-primary" ng-click="ok(true)" ng-disabled="addInterceptorForm.$invalid">Add and close</button>
+				<button class="btn btn-primary" ng-click="ok(false)" ng-disabled="addInterceptorForm.$invalid">Add and add another</button>
+				<button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+			</div>
+		</form>

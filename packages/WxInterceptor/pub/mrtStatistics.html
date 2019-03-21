@@ -1,0 +1,45 @@
+
+<div class="content">
+
+<h2>Measure Runtime - Statistics View</h2>
+
+    <div ng-include="'cmdTmpl/mrtStatistics.html'" class="commandBox_top"></div>
+         
+	<br/><br/>
+	 
+	<table st-table="statisticsData" st-safe-src="MrtModel.data"
+		class="table table-striped smallFont">
+		<thead>
+			<tr>
+				<th st-sort="serviceFqn" style="cursor:pointer;">Service Name</th>
+				<th st-sort="statistics.invocations" style="cursor:pointer;">Invocations</th>
+				<th st-sort="statistics.min" style="cursor:pointer;">Min</th>
+				<th st-sort="statistics.max" style="cursor:pointer;">Max</th>
+				<th st-sort="statistics.sum" style="cursor:pointer;">Sum</th>
+				<th st-sort="statistics.avg" style="cursor:pointer;">Avg</th>
+				<th st-sort="statistics.stdDev" style="cursor:pointer;">stdDev</th>
+			</tr>	
+			<tr>
+		<th>
+			<input st-search="'serviceFqn'" placeholder="search for service name" class="input-sm form-control" type="search" style="font-style:italic; font-weight:normal;"/>
+		</th>
+		<th colspan="7">
+		</th>
+	</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="entry in statisticsData">
+				<td>{{entry.serviceFqn}}</td>
+				<td>{{entry.statistics.invocations}}</td>
+				<td>{{(entry.statistics.min/MrtModel.selectedTimeunit).toFixed(2)}}</td>
+				<td>{{(entry.statistics.max/MrtModel.selectedTimeunit).toFixed(2)}}</td>
+				<td>{{(entry.statistics.sum/MrtModel.selectedTimeunit).toFixed(2)}}</td>
+				<td>{{(entry.statistics.avg/MrtModel.selectedTimeunit).toFixed(2)}}</td>
+				<td>{{(entry.statistics.stdDev/MrtModel.selectedTimeunit).toFixed(2)}}</td>
+			</tr>
+		</tbody>
+	</table>
+	
+    <div ng-include="'cmdTmpl/mrtStatistics.html'" class="commandBox_bottom"></div>	
+</div>
+

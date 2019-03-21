@@ -1,0 +1,15 @@
+<div class="commandBox">
+	<span class="smallFont">Commands: </span>
+	<span class="btn btn-default commandButton" ng-click="reloadStatistics()">
+		<span style="width:25px; cursor:pointer" class="ti-reload commandButtonIcon"> </span>Refresh
+	</span>
+	<span ng-controller="MrtModalCtrl" class="btn btn-default commandButton" ng-click="addMrtInterceptor()">
+		<span style="width:25px; cursor:pointer" class="ti-plus commandButtonIcon"> </span>Add service to measure
+	</span>
+	<span class="btn btn-default commandButton" ng-click="resetStatistics()">
+		<span style="width:25px; cursor:pointer" class="ti-reload commandButtonIcon"> </span>Reset All Statistics
+	</span>
+	<span class="btn btn-default commandButton" style="cursor:default;" >
+	    <span style="width:25px;" class="ti-time commandButtonIcon"> </span>Choose time unit: <select ng-model="MrtModel.selectedTimeunit" ng-options="unit.divider as unit.name for unit in MrtModel.timeunits"></select>
+	</span>
+</div>
