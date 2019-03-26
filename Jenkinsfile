@@ -7,11 +7,12 @@ pipeline {
                 sh 'chmod -R 777 ${WORKSPACE}'
             }
         }
-		stage('Clean'){
+	/*	stage('Clean'){
             steps {
                 sh '${WORKSPACE}/Cleanup.sh'
         	}
-        }
+        } 
+    */
 		stage('Build'){
             steps {
                 sh '${WORKSPACE}/Build.sh'
