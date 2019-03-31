@@ -5,7 +5,7 @@ Sample OpenShift examples that contains CI/CD Scripts
 
 Jenkinsfile in the root of the project contain Jenkins Pipeline declaration. With this you will be able to set up the CI in Jenkins quickly.
 
-Required environment variables (see Build.sh in the root directory) should be provided while configuring the CI job in Jenkins. Also update the yaml files in the root directory as per the requirement.
+Required environment variables (see Build.sh in the root directory) should be provided while configuring the CI job in Jenkins. Also update the yaml files in the root directory as per the requirement. ( route.yaml needs to be updated with the host name) 
 
 Currently cleanup.sh is commented in Jenkinsfile.
 

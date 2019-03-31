@@ -5,3 +5,6 @@ kind: ConfigMap
 metadata:
   name: my-config
   namespace: msrnamespace
+ data:
+  INSTALL_DIR: "/opt/softwareag"
+  
