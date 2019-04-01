@@ -1,10 +1,10 @@
 apiVersion: v1
 data:
   myvalue: MicroServiceRuntime
+  installdir: "/opt/softwareag"
 kind: ConfigMap
 metadata:
   name: my-config
   namespace: msrnamespace
- data:
-  INSTALL_DIR: "/opt/softwareag"
+  
   

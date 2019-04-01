@@ -33,6 +33,11 @@ spec:
                configMapKeyRef:
                 key: myvalue
                 name: my-config
+            - name: installdir
+              valueFrom:
+               configMapKeyRef:
+                key: installdir
+                name: my-config
           image: >-
             172.30.1.1:5000/msrnamespace/microruntime:v2
           imagePullPolicy: Always

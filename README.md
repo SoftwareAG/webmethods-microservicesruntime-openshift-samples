@@ -9,6 +9,8 @@ Required environment variables (see Build.sh in the root directory) should be pr
 
 Currently cleanup.sh is commented in Jenkinsfile.
 
+MSR docker images are created with the -Dimage.name=registry.access.redhat.com/rhel7 option for use with OpenShift if using the IS docker scripts.
+
 Dockerfile in the repository assumes that "microruntime:v1" base image is available in the local registry
 
 For more information about Microservices Runtime, see the official Software AG Microservices Runtime documentation.
