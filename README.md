@@ -18,7 +18,9 @@ MSR docker images are created with the -Dimage.name=registry.access.redhat.com/r
 Dockerfile in the repository assumes that "microruntime:v1" base image is available in the local registry
 
 For more information about Microservices Runtime, see the official Software AG Microservices Runtime documentation.
-  ______________________Important!
+  ______________________
+  
+ Important!
 --
 
 Many samples uses Docker images of webMethods Microservices Runtime published on Docker store. 
